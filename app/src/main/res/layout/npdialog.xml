@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hour"
+            android:textAlignment="center"
+        />
+
+        <NumberPicker
+            android:id="@+id/hrNumPicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/plus3HourButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" + 3 Hour"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/minus3HourButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" -  3 Hour"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Min"
+            android:textAlignment="center"
+            />
+
+        <NumberPicker
+            android:id="@+id/minNumPicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/plus10MinButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" + 10 min"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/minus10MinButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" -  10 min"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sec"
+            android:textAlignment="center"
+            />
+
+        <NumberPicker
+            android:id="@+id/secNumPicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/plus10SecButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" + 10 sec"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/minus10SecButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" -  10 sec"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

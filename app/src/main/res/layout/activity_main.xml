@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlueMagenta"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/headerBox"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "column name list"
+            android:textColor="@android:color/white"
+            android:id="@+id/headerTextView"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "columnSecondName"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/tsList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:divider="@android:color/white"
+        android:dividerHeight="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/timeStampButton_2"
+        app:layout_constraintTop_toBottomOf="@id/headerBox"/>
+
+    <Button
+        android:id="@+id/timeStampButton"
+        android:text="Count up time stamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/timeStampButton_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Count down time stamp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/timeStampButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
